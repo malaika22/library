@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <div class="main-container">
+    <header>
+        <h1>Welcome to Library</h1>
+        <button class="addBooks">Add new books?</button>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr id="heading-row">
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Return date</th>
+                        <th>Progress</th>   
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                
+            </tbody>
+        </table>
+    </main>
+</div>
+<div class="modal-container">
+    <form  method="post" acion="">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" placeholder="Enter book title" value="" required>
+        </div>
+        <div>
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" placeholder="Enter author name" required><br>
+        </div>
+       <div>
+        <label for="genre"  >Genre</label>
+        <input type="text" name="genre" id="genre" placeholder="Enter genre" required><br>
+       </div>
+        <div >
+            <label >Progess</label>
+            <input type="radio" id="read" name="read" value="Read" required>
+            <label class="progess-button" for="read">Read</label>
+            <input type="radio" id="not-read" name="read" value="In progress" required>
+            <label  class="progess-button in-progress" for="not-read">In progress</label>
+        </div>
+        <div class="confirmBookbuttons">
+            <input type="submit" class="formbuttons addBooks" id="add-book-button" value="Submit">
+            <button class="formbuttons addBooks" id="cancel-button">Cancel</button>
+        </div>
+       
+    </form>
+</div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
